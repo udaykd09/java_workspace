@@ -72,8 +72,10 @@ int main(int argc, char **argv) {
 	len = str.size();
 	j = 0;
 	for (i = 0; i < len; i++) {
-
-		if (exp[i] >= '0' && exp[i] <= '9') {
+		if(exp[i] == '-' && exp[i+1]!=',' && i!=len-1){
+			buffer[j++] = '-';
+		}
+		else if (exp[i] >= '0' && exp[i] <= '9') {
 			buffer[j++] = exp[i];
 		} else if (exp[i] == ',') {
 			if (j > 0) {
