@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Threadss</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/printer/Client.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Library/Containers/com.apple.mail/Data/Library/Mail%20Downloads/7F4CFBC9-46AE-44CD-87C0-387563F348EF/src/Client.java</locationURI>
+		</link>
+		<link>
+			<name>src/printer/Printer.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Library/Containers/com.apple.mail/Data/Library/Mail%20Downloads/7F4CFBC9-46AE-44CD-87C0-387563F348EF/src/Printer.java</locationURI>
+		</link>
+		<link>
+			<name>src/printer/PrinterThread.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Library/Containers/com.apple.mail/Data/Library/Mail%20Downloads/7F4CFBC9-46AE-44CD-87C0-387563F348EF/src/PrinterThread.java</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
