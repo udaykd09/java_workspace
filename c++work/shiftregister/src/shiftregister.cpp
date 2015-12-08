@@ -109,48 +109,6 @@ void convertDtoB(string& str, bool nflag, bool& carr, string sval) {
 		reverse(twosComp.begin(), twosComp.end());
 		carr = 1;
 		str = twoComp(twosComp);
-//		for (int x = 0; x < j; x++) {
-//			if (arr[x] == 1)
-//				arr[x] = 0;
-//			else if (arr[x] == 0)
-//				arr[x] = 1;
-//		}
-//		int arr2[j];
-//		int d = j - 1;
-//		for (int x = 0; x < j; x++) {
-//			arr2[d] = arr[x];
-//			d--;
-//		}
-//		vector<int> arr1(j);
-//		vector<int> m2(j);
-//		int carry = 0;
-//		for (int x = 0; x < j; x++) {
-//			m2[x] = 0;
-//		}
-//		m2[j - 1] = 1;
-//
-//		for (int i = j - 1; i >= 0; i--) {
-//			if (arr2[i] + m2[i] + carry == 0) {
-//				arr1[i] = 0;
-//				carry = 0;
-//			} else if (arr2[i] + m2[i] + carry == 1) {
-//				arr1[i] = 1;
-//				carry = 0;
-//			} else if (arr2[i] + m2[i] + carry == 2) {
-//				arr1[i] = 0;
-//				carry = 1;
-//			} else if (arr2[i] + m2[i] + carry > 2) {
-//				arr1[i] = 1;
-//				carry = 1;
-//			}
-//		}
-//		string i1;
-//		for (int g = 0; g < j; g++) {
-//			if (arr1[g] == 1)
-//				i1 += "1";
-//			else if (arr1[g] == 0)
-//				i1 += "0";
-//		}
 	}
 	int sval_check = atoi(sval.c_str());
 	int check_s = str.length() + 1;
@@ -425,20 +383,8 @@ shiftregister shiftregister::operator*(shiftregister& s) {
 
 	int ifzero = Product.sr1.size()-this->sr1.size();
 	if ((s3 == checkString) ||(s4 == checkString)) {
-//		for(int i=0;i<ifzero;i++){
-//		Product.sr1.erase(Product.sr1.begin());
-//		//cout << Product.sr1.size() << this->sr1.size();
-//		}
 		return Product;
 	}
-
-//	if (s4 == checkString) {
-//		for(int i=0;i<ifzero;i++){
-//		Product.sr1.erase(Product.sr1.begin());
-//		//cout << "#";
-//		}
-//		return Product;
-//	}
 
 	for (int j = Multiplier.sr1.size()-1; j >= 0; j--) {
 //		cout << endl;
@@ -472,32 +418,6 @@ shiftregister shiftregister::operator*(shiftregister& s) {
 		Multiplicand.shiftLeft("0");
 		Multiplier.shiftRight("0");
 	}
-//	while (Product.sr1[0] != 1) {
-//		Product.sr1.erase(Product.sr1.begin());
-//	}
-//
-//	if (Product.r_carry == 0) {
-//		Product.sr1.insert(Product.sr1.begin(), 0);
-//		int checkSize = this->sr1.size()-Product.sr1.size();
-//		if(checkSize>0){
-//		for(int i=0;i<checkSize;i++){
-//			Product.sr1.insert(Product.sr1.begin(), 0);
-//		}
-//		}
-//	}
-//
-//		if (Product.r_carry == 1) {
-//		string s6 = Product.registerToString();
-//		s6 = twoComp(s6);
-////
-//		for (int k = 0; k < s6.length(); k++) {
-//			if (s6[k] == '0')
-//				Product.sr1[k] = 0;
-//			else if (s6[k] == '1')
-//				Product.sr1[k] = 1;
-//		}
-		//Product.sr1.insert(Product.sr1.begin(), 1);
-//	}
 		return Product;
 
 	}
@@ -597,42 +517,6 @@ shiftregister shiftregister::operator*(shiftregister& s) {
 				else if (twosComp[k] == '1')
 					b[k] = 1;
 			}
-//		for (int x = 0; x < j; x++) {
-//			if (b[x] == 1)
-//				b[x] = 0;
-//			else if (b[x] == 0)
-//				b[x] = 1;
-//			//cout << b[x];
-//		}
-//		//cout << endl;
-//		vector<int> arr1(j);
-//		vector<int> m2(j);
-//		int carry = 0;
-//		for (int x = 0; x < j; x++) {
-//			m2[x] = 0;
-//		}
-//		m2[j - 1] = 1;
-//
-//		for (int i = j - 1; i >= 0; i--) {
-//			if (b[i] + m2[i] + carry == 0) {
-//				arr1[i] = 0;
-//				carry = 0;
-//			} else if (b[i] + m2[i] + carry == 1) {
-//				arr1[i] = 1;
-//				carry = 0;
-//			} else if (b[i] + m2[i] + carry == 2) {
-//				arr1[i] = 0;
-//				carry = 1;
-//			} else if (b[i] + m2[i] + carry > 2) {
-//				arr1[i] = 1;
-//				carry = 1;
-//			}
-//		}
-//
-//		for (int x = 0; x < j; x++) {
-//			b[x] = arr1[x];
-//			//cout << b[x];
-//		} //cout << endl;
 		}
 
 		long long num = 0;
