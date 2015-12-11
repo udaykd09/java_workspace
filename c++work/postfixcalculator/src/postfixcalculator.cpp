@@ -67,12 +67,16 @@ int main(int argc, char **argv) {
 		}
 //    printf("Enter a Postfix Expression: ( e.g. 23 34 * )\n");
 //    gets(exp);
-
+	bool flag = 0;
 	string str = exp;
 	len = str.size();
 	j = 0;
 	for (i = 0; i < len; i++) {
-		if(exp[i] == '-' && exp[i+1]!=',' && i!=len-1){
+		if(len <= 4){
+			cout << "Incorrect input" << endl;
+			return -1;
+		}
+		if(i!=len-1 && exp[i] == '-' && exp[i+1]!=','){
 			buffer[j++] = '-';
 		}
 		else if (exp[i] >= '0' && exp[i] <= '9') {
@@ -95,6 +99,12 @@ int main(int argc, char **argv) {
 		}
 	}
 
+	if(s.size()>1){
+		cout << "Incorrect input" << endl;
+		return -1;
+	}
+	else{
 	cout << s.top() << endl;
 	return 0;
+	}
 }
