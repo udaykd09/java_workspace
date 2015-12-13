@@ -1,1 +1,1 @@
-# workspace_1
+# java_workspace
